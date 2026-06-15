@@ -1,0 +1,446 @@
+.btn-erro {
+    background-color: #ff4d4d;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-erro:hover {
+    background-color: #e60000;
+}
+
+.swal2-popup { /* tem no admin.css, index.css e login.css */
+    border-radius: 10px;
+    /* background-color: #181531; */
+    /* color: #eee; */
+    
+    background: radial-gradient(#95fdb2, #95edfd);
+
+      /* background: linear-gradient(-45deg, #95fdb2, #95edfd); */
+
+    color: #002b1f;
+
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-sucesso { /* só no index e login */
+    background-color: #4CAF50 !important;
+    color: white !important;
+    border: none !important;
+    font-weight: bold !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-sucesso:hover { /* só no index e login */
+    background-color: #388E3C !important;
+} 
+
+
+body {
+    background-color: #fdf89541;
+    min-height: 100vh;
+}
+
+.secao-img-link {
+    height: 100vh;
+    width: 35%;
+    padding: 20px 0 20px 50px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+.secao-img-link .link-home {
+    background: radial-gradient(#63fd8f, #32d0ec);
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    transition: .2s ease;
+}
+
+.secao-img-link .link-home:hover {
+    transform: scale(1.1);
+}
+
+.secao-img-link .container-img-link {
+    width: 400px;
+    flex-direction: column;
+    background: linear-gradient(-45deg, #95fdb2, #95edfd);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px #00191d3d;
+    font-family: 'Poppins', sans-serif;
+}
+
+.secao-img-link .container-img-link .img-ray {
+    width: 100%;
+    animation: moverX 2s infinite;
+}
+
+.secao-forms {
+    width: calc(100% - 35%);
+    position: absolute;
+    right: 0;
+    padding: 20px 0;
+    min-height: 100vh;
+}
+
+.secao-forms .wrapper {
+    position: relative;
+    width: 700px;
+    height: 530px;
+    /* background: radial-gradient(#95fdb2, #95edfd); */
+    /* background: linear-gradient(45deg, #95fdb2, #95edfd); */
+    
+    background: linear-gradient(45deg, #c1fcd3, #c9f4fa);
+    border-radius: 20px;
+    box-shadow: 0 3px 10px #00191d3d;
+    overflow: hidden;
+    transition: transform 1s ease-in-out, height 450ms ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+.secao-forms .wrapper.active {
+    height: 621px;
+}
+
+.wrapper .form-box.login {
+    transition: transform .8s ease;
+    transform: translateX(0);
+    padding: 20px 60px;
+} 
+
+.wrapper.active .form-box.login {
+    transition: none;
+    transform: translateX(-700px);
+}
+
+.wrapper .form-box.cadastrar {
+    position: absolute;
+    transition: none;
+    transform: translateX(700px);
+    padding: 20px;
+}
+
+.wrapper.active .form-box.cadastrar {
+    transition: transform .8s ease;
+    transform: translateX(0);
+} 
+
+.wrapper .form-box {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.wrapper .form-box .logo {
+    height: 60px;
+    align-self: flex-start;
+}
+
+.wrapper .form-box .head-form {
+    flex-direction: column;
+    font-family: "Lora", serif;
+    text-align: center;
+}
+
+.wrapper .form-box .form {
+    font-size: 20px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.wrapper .form-box .link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.wrapper .form-box .form .box-input i {
+    border-radius: 20px 0 0 20px;
+    padding: 0 5px 0 10px;
+}
+
+.wrapper .form-box .form input {
+    background: none;
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+}
+
+.wrapper .form-box .form .btn {
+    font-size: 18px;
+    font-weight: 900;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: "Lora", serif;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.wrapper .form-box .txt {
+    text-align: center;
+}
+
+
+.wrapper .form-box.login .head-form {
+    color: #043038;
+}
+
+.wrapper .form-box.login .link {
+    color: #037083;
+}
+
+.wrapper .form-box .form-login {
+    gap: 30px;
+    color: #043038;
+}
+
+.wrapper .form-box .form-login label {
+    width: 100%;
+}
+
+.wrapper .form-box .form-login .box-input {
+    height: 50px;
+}
+
+.wrapper .form-box .form-login .box-input i {
+    border: 1px solid #043038b6;
+    height: 40px;
+    font-size: 35px;
+}
+
+.wrapper .form-box .form-login .box-input input {
+    border: 1px solid #043038b6;
+    border-left: none;
+    font-size: 20px;
+    height: 40px;
+    width: 100%;
+}
+
+.wrapper .form-box .form-login .box-senha {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.wrapper .form-box .form-login .btn-login {
+    background-color: #95fdb2;
+    color: #043038;
+}
+
+.wrapper .form-box .form-login .btn-login:hover {
+    background-color: #3ff773;
+}
+
+
+
+.wrapper .form-box.cadastrar .cont-title {
+    width: 100%;
+    padding: 0 40px 0 0;
+    justify-content: space-between;
+}
+
+.wrapper .form-box.cadastrar .head-form {
+    color: #024130;
+}
+
+.wrapper .form-box .form-cadastrar {
+    gap: 20px;
+    color: #024130;
+}
+
+.wrapper .form-box.cadastrar .link {
+    color: #0b8564;
+}
+
+.wrapper .form-box .form-cadastrar .lbl {
+    width: 80%;
+}
+
+.wrapper .form-box .form-cadastrar .box-input {
+    width: 100%;
+}
+
+.wrapper .form-box .form-cadastrar .lbls-cadastro .box-input {
+    width: max-content;
+}
+
+.wrapper .form-box .form-cadastrar .box-input i {
+    border: 1px solid #0241309f;
+    height: 30px;
+    font-size: 25px;
+}
+
+.wrapper .form-box .form-cadastrar .box-input input {
+    border: 1px solid #0241309f;
+    border-left: none;
+    height: 30px;
+    font-size: 18px;
+}
+
+.wrapper .form-box .form-cadastrar .box-input .input-txt {
+    width: 100%;
+}
+
+.wrapper .form-box .form-cadastrar .lbls-cadastro {
+    width: 80%;
+    justify-content: space-between;
+}
+
+.wrapper .form-box .form-cadastrar .lbls-cadastro .inp-200 {
+    max-width: 200px;
+}
+
+.wrapper .form-box .form-cadastrar .lbl-selecao {
+    flex-direction: column;
+}
+
+.wrapper .form-box .form-cadastrar select {
+    background-color: #c0f0f8;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    appearance: none;
+    width: 230px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px 0;
+    cursor: pointer;
+    color: #002b1f;
+}
+
+.wrapper .form-box .form-cadastrar .box-atributos-adicionais {
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    transition: height .4s ease;
+}
+
+.wrapper .form-box .form-cadastrar .box-atributos-adicionais.ativo {
+    height: 141px;
+}
+
+.wrapper .form-box .form-cadastrar .box-atributos-adicionais .atributos {
+    display: none;
+    width: 100%;
+}
+
+.form-box .form-cadastrar .atributos .lbls-cadastro {
+    width: 90%;
+    justify-content: center;
+    gap: 15px;
+}
+
+.form-box .form-cadastrar .atributos .label-lado {
+    flex-direction: column;
+    width: 50%;
+}
+
+.form-box .form-cadastrar .atributos .label-lado span {
+    align-self: flex-start;
+}
+
+.wrapper .form-box .form-cadastrar .box-atributos-adicionais .atributos.ativo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.wrapper .form-box .form-cadastrar .box-atributos-adicionais .atributos input {
+    border: 1px solid #0241309f;
+    border-radius: 20px;
+    height: 30px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.wrapper .form-box .form-cadastrar .box-atributos-adicionais .atributos.responsavel .box-lbl {
+    justify-content: center;
+}
+
+.wrapper .form-box .form-cadastrar .box-atributos-adicionais .atributos.responsavel {
+    padding: 20px;
+}
+
+.wrapper .form-box .form-cadastrar #title-avatares {
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: "Lora", serif;
+    width: 100%;
+    border-bottom: 2px solid #024130;
+    transition: border-bottom .4s ease;
+    cursor: pointer;
+}
+
+.wrapper .form-box .form-cadastrar #title-avatares .seta {
+    transition: .4s ease;
+}
+
+.wrapper .form-box .form-cadastrar #title-avatares .seta.ativo {
+    rotate: 180deg;
+}
+
+.wrapper .form-box .form-cadastrar .box-avatares {
+    height: 0;
+    overflow: hidden;
+    transition: height .4s ease;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wrapper .form-box .form-cadastrar .box-avatares.ativo {
+    height: 270px;
+    width: 100%;
+}
+
+.wrapper .form-box .form-cadastrar .box-avatares .sec-avatares {
+    gap: 20px;
+    width: 100%;
+    height: 100px;
+}
+
+.wrapper .form-box .form-cadastrar .box-avatares .img-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.wrapper .form-box .form-cadastrar .box-avatares .img-avatar:hover,
+.wrapper .form-box .form-cadastrar .box-avatares input[type="radio"]:checked + label .img-avatar {
+    transform: scale(1.1);
+    border-radius: 50%;
+    box-shadow: 0 0 5px 2px #63fd8f, 0 0 10px #32d0ec;
+}
+
+.wrapper .form-box .form-cadastrar .btn-cadastro {
+    background-color: #95edfd;
+    color: #024130;
+}
+
+.wrapper .form-box .form-cadastrar .btn-cadastro:hover {
+    background-color: #32dffd;
+}
+
+@keyframes moverX {
+    0%, 100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+}
