@@ -1,0 +1,133 @@
+.swal2-popup {
+    border-radius: 10px;
+    background: radial-gradient(#95fdb2, #95edfd);
+    color: #002b1f;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-sucesso { /* só no index e login */
+    background-color: #4CAF50 !important;
+    color: white !important;
+    border: none !important;
+    font-weight: bold !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.main {
+    padding: 50px 20px;
+}
+
+.main .slogan {
+    font-size: 2pc;
+}
+
+.main .wrapper {
+    flex-direction: column; 
+    gap: 100px;
+    margin-top: 40px;
+}
+
+.secao {
+    /* width: 1080px; */
+    width: 1200px;
+    max-width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 40px;
+}
+
+.amarelo {
+    box-shadow: -10px 10px #fdf895;
+    background-color: #fdf89593;
+    color: #07271b;
+}
+
+.verde {
+    box-shadow: -10px 10px #95fdb2;
+    background-color: #95fdb291;
+
+    color: #01343d;
+}
+
+.azul {
+    box-shadow: -10px 10px #95edfd;
+    background-color: #95edfd8e;
+
+    color: #312801;
+}
+
+.secao .img-secao {
+    max-height: 328px;
+}
+
+.secao.amarelo .img-secao {
+    animation: rodar 2s infinite;
+}
+
+
+.secao.azul .img-secao {
+    animation: mover 2s infinite;
+}
+
+.secao .box-txt {
+    min-height: 328px;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 22px;
+    text-align: center;
+    font-family: "Lora", serif;
+}
+
+.secao .box-txt .saudacao {
+    font-weight: 900;
+    color: #17694a;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+}
+
+.secao .box-txt .container-conteudos {
+    /* border: 1px solid red; */
+    gap: 30px;
+}
+
+.box-conteudo {
+    width: 290px;
+    /* background-color: #fdf895; */
+    text-align: center;
+}
+
+.box-conteudo .icone-conteudo {
+    height: 150px;
+    animation: pulsar 3s infinite ease-in-out;
+}
+
+
+@keyframes rodar {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes pulsar {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes mover {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

@@ -1,0 +1,105 @@
+
+.header {
+    background: linear-gradient(to right, #fdf895c2, #95fdb2c2, #95edfdc5);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px #3533106c;
+    padding: 10px 60px;
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite;
+
+    /* altura = 100px */
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.header .icone-menu {
+    /* background: linear-gradient(130deg, #fdf895, #95fdb2, #95edfd); */
+    font-size: 40px;
+    color: #0d442f;
+    cursor: pointer;
+}
+
+.header .avatar {
+    box-shadow: 0 0 10px #3533104d;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header .title {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: #0d442f;
+}
+
+.header .container_menu {
+    position: relative;
+}
+
+.header .container_menu .menu {
+    position: absolute;
+    top: 100%;
+    /* width: 153px; */
+    width: 140px;
+    flex-direction: column;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #0d442f;
+    border-radius: 10px;
+    height: 0;
+    overflow: hidden;
+    transition: height .4s ease;
+    z-index: 1;
+}
+
+.header .container_menu .menu.conteudos {
+    background-color: #95edfd;
+}
+
+.header .container_menu .menu.perfil {
+    background-color: #fdf895;
+}
+
+.header .container_menu .menu.aberto {
+    height: 94px;
+
+}
+
+.header .container_menu .menu .linkMenu {
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    transition: .4s ease;
+}
+
+.header .container_menu .menu.conteudos .linkMenu:hover {
+    background-color: #4addf7;
+}
+
+.header .container_menu .menu.perfil .linkMenu:hover {
+    background-color: #fff64b;
+}
+
+.header .container_menu .menu .linkMenu:first-child {
+    border-radius: 10px 10px 0 0;
+}
+
+.header .container_menu .menu .linkMenu:last-child {
+    border-radius: 0 0 10px 10px;
+}

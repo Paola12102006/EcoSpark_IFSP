@@ -1,0 +1,152 @@
+body {
+    background: linear-gradient(to right, #fdf895c2, #95fdb2c2, #95edfdc5);
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.head {
+    color: #362604;
+    font-family: "Lora", serif;
+    text-align: center;
+    padding: 20px;
+    width: 1250px;
+    max-width: 100%;
+    position: relative;
+}
+
+.box-icones {
+    width: 100%;
+    position: absolute;
+    justify-content: space-between;
+}
+
+.head .txt {
+    font-weight: 500;
+}
+
+.head .container {
+    flex-direction: column;
+    height: 48px;
+}
+
+.head .container .icone {
+    font-size: 30px;
+    color: #0d442f;
+}
+
+.head .container span {
+    font-size: 14px;
+    color: #4f6b5f;
+}
+
+main {
+    width: 1200px;
+    max-width: 90%;
+    background-color: #f0f8ff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #4f6b5f4d;
+    color: #0d3944;
+    padding: 30px 40px;
+    font-family: "Poppins", sans-serif;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.box-head {
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+}
+
+.box-head .avatar {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.box-head .nome {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.box-head .icon {
+    font-size: 35px;
+}
+
+.subtitle {
+    text-align: center;
+    opacity: .9;
+    font-family: "Playfair Display", serif;
+}
+
+.wrapper {
+    width: 90%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wrapper .box-dados {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 22px;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.wrapper .box-dados .dado {
+    width: 50%;
+}
+
+@media (max-width: 1250px) {
+    .box-icones {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .wrapper .box-dados {
+        flex-direction: column;
+    }
+
+    .wrapper .box-dados .dado {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+        padding: 30px;
+        gap: 0;
+    }
+
+    .box-head {
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+    }
+
+    .icon-editar {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .wrapper {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 660px) {
+    .box-icones {
+        width: 200px;
+        top: 20px;
+    }
+
+    .head {
+        height: 169px;
+        align-items: flex-end;
+    }
+}

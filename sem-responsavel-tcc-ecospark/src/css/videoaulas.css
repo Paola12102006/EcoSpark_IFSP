@@ -1,0 +1,205 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.main {
+    min-height: calc(100vh - 80px);
+    padding: 50px 100px 30px;
+    flex-direction: column;
+    position: relative;
+}
+
+.link-voltar {
+    color: #0d442f;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    background-color: #72e8fd;
+    padding: 5px 10px;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.slogan {
+    font-size: 1.5pc;
+    width: 80%;
+    margin: auto;
+}
+
+.sec {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.sec .subtitle {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #0d442f;
+    gap: 10px;
+    justify-content: flex-start;
+    border-bottom: 2px solid #0d442f96;
+    cursor: pointer;
+}
+
+.sec .subtitle i {
+    font-size: 25px;
+    transition: .5s ease;
+}
+
+.container-conteudo {
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 40px;
+    padding: 20px;
+    width: 100%;
+    height: 300px;
+    overflow-y: hidden;
+    transition: .5s ease;
+}
+
+.container-conteudo.aberto {
+    height: var(--altura-conteudo);
+}
+
+.seta-secao.aberto {
+    rotate: 180deg;
+}
+
+.txt-abrir {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 15px;
+    color: #4b5853;
+    cursor: pointer;
+}
+
+
+.card-conteudo {
+    width: 320px;
+    padding: 15px;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    transition: .4s ease;
+}
+
+.card-conteudo:hover {
+    transform: scale(1.05);
+}
+
+.card-conteudo.realizado {
+    background-color: #b1fdc6;
+    color: #01343d;
+}
+
+.card-conteudo.pendente {
+    background-color: #fdf895;
+    color: #07271b;
+}
+
+.card-conteudo .fig-img-cont {
+    width: 100%;
+    /* é 350 */
+    /* height: 219px; */
+
+    /*  width 270  */
+    height: 169px;
+
+    /*  width 290  */
+    height: 182px;
+
+    position: relative;
+}
+
+.form-marcar button {
+    cursor: pointer;
+    font-family: "Lora", serif;
+    background: none;
+    font-weight: 800;
+    color: #01343d;
+    background-color: #4addf7;
+    padding: 5px;
+    border-radius: 5px;
+}
+.form-marcar button:hover {
+    background-color: #08cff1;
+}
+
+.card-conteudo .fig-img-cont .img-cont {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-conteudo .fig-img-cont figcaption {
+    position: absolute;
+    width: 100%;
+    /* background-color: #4b5853c7; */
+    background-color: #4b5853;
+    color: #fff;
+    bottom: 0;
+    border-radius: 0 0 20px 20px;
+}
+
+.card-conteudo .title-va {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.card-conteudo .infos-va {
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-height: 170px;
+    padding-right: 5px;
+    overflow-y: auto;
+}
+
+.title-descricao {
+    text-align: center;
+    width: 100%;
+}
+
+.table-info {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-info td {
+    border: 1px solid #3afc71;
+    padding: 5px;
+}
+
+.card-conteudo.realizado .table-info td {
+    border: 1px solid #3afc71;
+}
+
+.card-conteudo.pendente .table-info td {
+    border: 1px solid #e9df1d;
+}
+
+.infos-va::-webkit-scrollbar {
+    width: 10px;
+}
+
+.infos-va::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+}
+
+.card-conteudo.realizado .infos-va::-webkit-scrollbar-thumb {
+    background-color: #3afc71;
+}
+
+.card-conteudo.pendente .infos-va::-webkit-scrollbar-thumb {
+    background-color: #e9df1d;
+}
